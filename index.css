@@ -50,6 +50,7 @@ input[type="checkbox"]{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 /* 
@@ -226,46 +227,40 @@ input[type="checkbox"]{
 main{
     margin: 100px 120px;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid black;
-    padding: 16px;
+
+nav .tabs .tab a[data-switcher]{
+    display: block;
+    cursor: pointer;
+    color: #000;
 }
 
-.home_tbl thead tr {
-
-    background-color: aquamarine;
+nav .tabs .tab is-active a[data-switcher] {
+    background-color: rebeccapurple;
 }
 
-iframe {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    border: none;
+nav .tabs .tab:hover a[data-swithcer]{
+    background-color: rebeccapurple;
 }
 
-textarea {
-    width: 100%;
+.pages .page {
+display: none;
 }
 
-th,
-td {
-    text-align: left;
-    padding: 16px;
+.pages .page.is-active {
+    display: block;
 }
 
 
-.home_tbl p {
-    text-align: center;
-}
 
-tr:nth-child(even) {
-    background-color: #f2f2f2
-}
+
+
+
+
+
+
+
+
+
 
 .navbar_container {
     width: 85%;
@@ -307,19 +302,68 @@ tr:nth-child(even) {
 .navbar ul li:hover::after{
     width: 100%;
 }
-div{
-    border: 1px solid red;
-}
 
 body{
- background-image: url("./vy.jpg");
+
+    /* background-image: url("./vy.jpg"); */
+    /* background-image: url("lucy.jpg"); */
 background-repeat: no-repeat;
-background-size: cover;
-font-family: 'Merriweather';
+
+
 }
 
 .banner{
     padding: 30px 30px;
     position: relative;
     top: 30px;
+}
+article{
+background-color: blueviolet;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.home_tbl thead tr {
+
+    background-color: aquamarine;
+}
+
+iframe {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+
+.home_tbl p {
+    text-align: center;
+}
+
+.transparent-style {
+
+    background-color: #ffffff;
+    opacity: .4;
+
+}
+
+footer{
+    background-color: black;
+}
+
+.hide{
+    display: none;
 }
