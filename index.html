@@ -40,61 +40,69 @@
     </header>
 
     <main>
-    <section class="pages">
-        <div class="page is-active" data-page="1">
-            <table class="home_tbl">
-                <thead>
-                    <tr>
-                        <th>Video</th>
-                        <th>Languages</th>
-                        <th>Sources Code</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-    
-                    <tr>
-                        <td class="des">
-                            <iframe width="200" height="250" src="https://www.youtube.com/embed/pQN-pnXPaVg"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </td>
-                        <td>
-                            <p>Html</p>
-                        </td>
-                        <td>
-                            <textarea name="" id="" cols="40" rows="15"></textarea>
-                        <td>
-                            <button>reset</button>
-    
-                            <button>edit</button>
-    
-                            <button>copy</button>
-    
-                        </td>
-    
-    
-                        </td>
-                    </tr>
-    
-                </tbody>
-            </table>
-        </div>
+        <section class="pages">
+            <div id="page1" class="page is-active" data-page="1">
+                <div class="home_title">
+                    <h1>My Project</h1>
+                    <h3>ins: vgiang0205_</h3>
+                </div>
+            </div>
 
-        <div class="page" data-page = "2">
-            <h1>This is page 2</h1>
-        </div>
+            <div class="page" data-page="2">
+                <table class="home_tbl">
+                    <thead>
+                        <tr>
+                            <th>Video</th>
+                            <th>Languages</th>
+                            <th>Sources Code</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <div class="page" data-page = "3">
-            <h1>This is page 3</h1>
-        </div>
-    </section>
-    
+                        <tr>
+                            <td>
+                                <iframe width="200" height="250" src="https://www.youtube.com/embed/pQN-pnXPaVg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </td>
+                            <td>
+                                <p>Html</p>
+                            </td>
+                            <td>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <td class="button_tech">
+                                <button type="button" id="reset_btn" class="button_blue">reset</button>
+                                <button type="button" id="copy_btn" class="button_green">copy</button>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="page3" class="page" data-page="3">
+                <div class="page3">
+                    <div>
+                        <img src="vy.jpg" alt="">
+                    </div>
+                    <div class="contact_content">
+                        <h1>Contact me</h1>
+                    
+                        <label for="">Full name:</label><br>
+                        <input type="text" name="name_inp"><br><hr>
+                        <label for="">Email:</label><br>
+                        <input type="text" name="email_inp"><br><hr>
+                        <label for="">Message:</label><br>
+                        <input type="text" name="message_inp"><hr>
+           
+                        <button type="button">Contact</button>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        some infor
-    </footer>
     <script src="index.js"></script>
 </body>
 
