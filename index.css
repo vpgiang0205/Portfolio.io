@@ -45,12 +45,14 @@ nav .tabs .tab:hover a[data-swithcer] {
 }
 .page3 .contact_content{
     width: 40%;
-    position: relative;
-    left: 100px;
     background-color: hwb(288 4% 41%);
     border-radius: 14px;
     padding: 30px 40px;
     opacity: 90%;
+}
+.page3 img{
+    position: relative;
+    margin: 0 120px;
 }
 
 .page3 .contact_content h1 {
@@ -124,12 +126,13 @@ nav .tabs .tab:hover a[data-swithcer] {
 }
 
 body {
-
+padding: 0;
+margin: 0;
     /* background-image: url("./vy.jpg"); */
-    background-image: url("lucy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-color: rgb(58, 58, 58);
+    
 }
 
 .banner {
@@ -160,7 +163,8 @@ iframe {
 }
 
 textarea {
-    width: 100%;
+    max-width: 20%;
+    max-height: 20%;
 }
 
 th,
