@@ -6,14 +6,24 @@
     font-size: 103%;
 }
 
+body {
+
+    background-image: url("./lucy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(58, 58, 58);
+    background-attachment: fixed;
+    background-position: center;
+}
+
 main {
-    margin: 100px 120px;
+    margin: 30px 120px;
 }
 
 nav .tabs .tab a[data-switcher] {
     display: block;
     cursor: pointer;
-    color:white;
+    color: white;
 }
 
 nav .tabs .tab is-active a[data-switcher] {
@@ -22,37 +32,38 @@ nav .tabs .tab is-active a[data-switcher] {
 
 nav .tabs .tab:hover a[data-swithcer] {
     background-color: rebeccapurple;
-    
+
 }
 
 .pages .page {
-    display: none; 
+    display: none;
 }
 
 .pages .page.is-active {
     display: block;
 }
 
-.pages .page img{
-   
+.pages .page img {
+
     width: 800px;
 }
 
-.page3{
+.page3 {
     display: flex;
     width: 100%;
-   
+
 }
-.page3 .contact_content{
+
+.page3 .contact_content {
     width: 40%;
     background-color: hwb(288 4% 41%);
     border-radius: 14px;
     padding: 30px 40px;
     opacity: 90%;
 }
-.page3 img{
-    position: relative;
-    margin: 0 120px;
+
+.page3 img {
+    margin: 0 80px;
 }
 
 .page3 .contact_content h1 {
@@ -60,26 +71,27 @@ nav .tabs .tab:hover a[data-swithcer] {
     font-size: 220%;
 }
 
-.page3 .contact_content label{
+.page3 .contact_content label {
     color: white;
     line-height: 80px;
 }
 
 .page3 .contact_content hr {
-    width: 250px;    
+    width: 250px;
 }
 
 .page3 .contact_content input {
     color: black;
-    line-height: 30px;
+    line-height: 10px;
     z-index: 1;
     width: 250px;
 }
 
-.page3 .contact_content button{
+.page3 .contact_content button {
     padding: 10px 20px;
     margin: 50px 140px;
 }
+
 .navbar_container {
     width: 85%;
     margin: auto;
@@ -95,7 +107,7 @@ nav .tabs .tab:hover a[data-swithcer] {
     width: 120px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 220% ;
+    font-size: 220%;
 }
 
 .navbar ul li {
@@ -125,21 +137,6 @@ nav .tabs .tab:hover a[data-swithcer] {
     width: 100%;
 }
 
-body {
-padding: 0;
-margin: 0;
-    /* background-image: url("./vy.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(58, 58, 58);
-    
-}
-
-.banner {
-    padding: 30px 30px;
-    position: relative;
-    top: 30px;
-}
 
 article {
     background-color: blueviolet;
@@ -163,8 +160,7 @@ iframe {
 }
 
 textarea {
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 100%;
 }
 
 th,
@@ -193,12 +189,13 @@ footer {
     display: none;
 }
 
-.home_title{
-   display: block;
-   padding: 85px 0px;
+.home_title {
+    display: block;
+    padding: 85px 0px;
 }
-.home_title h1{
-color: rgb(255, 0, 255);
+
+.home_title h1 {
+    color: rgb(255, 0, 255);
     width: 100%;
     font-size: 600%;
 
@@ -206,8 +203,9 @@ color: rgb(255, 0, 255);
     position: relative;
     top: 100px
 }
-.home_title h3{
-color: rgb(255, 0, 255);
+
+.home_title h3 {
+    color: rgb(255, 0, 255);
     width: 100%;
     font-size: 200%;
 
@@ -215,33 +213,35 @@ color: rgb(255, 0, 255);
     margin: 100px 50px;
 }
 
-.button_tech{
-    
-}
+.button_tech {}
+
 .button_blue {
     background-color: rgb(128, 128, 255);
     padding: 0px 20px;
 }
 
-.button_red{
+.button_red {
     background-color: rgb(253, 121, 121);
     padding: 0px 20px;
 }
 
-.button_green{
+.button_green {
     background-color: aquamarine;
     padding: 0px 20px;
 
 }
 
-.home_tbl tbody tr{
+.home_tbl tbody tr {
     background-color: hwb(288 4% 41%);
     opacity: 80%;
 }
+
 i {
     cursor: pointer;
     display: flex;
-}login-page {
+}
+
+login-page {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
@@ -384,3 +384,12 @@ i {
 .container .info span .fa {
     color: #EF3B3A;
 }
+
+.page5 {
+    background-color: hwb(288 4% 41%);
+    opacity: 80%;
+}
+.page5 th{
+    background-color: rgb(0, 255, 221);
+}
+

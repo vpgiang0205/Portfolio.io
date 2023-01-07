@@ -91,15 +91,19 @@
                     <div class="contact_content">
                         <h1>Contact me</h1>
                         <label for="">Full name:</label><br>
-                        <input type="text" class="user" name="name_inp"><br><hr>
+                        <input type="text" class="user" name="name_inp"><br>
+                        <hr>
                         <label for="">Email:</label><br>
-                        <input type="text" class="user" name="email_inp"><br><hr>
+                        <input type="text" class="user" name="email_inp"><br>
+                        <hr>
                         <label for="">Message:</label><br>
-                        <textarea cols="2" rows="4" type="text" class="user" style="width: 45%;" name="message_inp"></textarea><hr>
-           
+                        <textarea cols="55" rows="6" type="text" class=""
+                            name="message_inp"></textarea>
+                        <hr>
+
                         <button type="button">Contact</button>
                     </div>
-                
+
                 </div>
             </div>
 
@@ -110,7 +114,7 @@
                             <form>
                                 <h1 style="color: hwb(288 4% 41%);">Login</h1><br>
                                 <input type="text" class="user" placeholder="  username" />
-                    
+
                                 <input type="password" class="pass" id="password" placeholder="  password" />
                                 <i class="fas fa-eye" onclick="show()"></i>
                                 <br>
@@ -118,55 +122,55 @@
                                 <button type="button" onclick="window.location.href='./home.html'">LOGIN</button>
                                 <p class="message"></p>
                             </form>
-                    
+
                             <form class="login-form">
                                 <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
                             </form>
                         </div>
                     </div>
-            
+
                 </div>
             </div>
 
             <div id="page5" class="page is-active" data-page="5">
-              <div class="page5">
-                <table class="admin_table">
-                   <tr>
-                    <th>Name</th>
-                    <th>Language</th>
-                    <th>Link</th>
-                    <th>Action</th>
-                   </tr>
-                   <tr>
-                    <tbody>
-                        <td>ten</td>
-                        <td>html, css</td>
-                        <td></td>
-                        <td>
-                            <button type="button">view</button>
-                        </td>
-                    </tbody>
-                   </tr>
-                </table>
-              </div>
+                <div class="page5">
+                    <table>
+                        <thead>
+                            <th>Person 1</th>
+                            <th>Person 2</th>
+                            <th>Person 3</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                                <td>Linus</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
         </section>
 
     </main>
     <script src="index.js">
-         function show() {
-                var password = document.getElementById("password");
-                var icon = document.querySelector(".fas")
+        function show() {
+            var password = document.getElementById("password");
+            var icon = document.querySelector(".fas")
 
-                // ========== Checking type of password ===========
-                if (password.type === "password") {
-                    password.type = "text";
-                }
-                else {
-                    password.type = "password";
-                }
-            };
+            // ========== Checking type of password ===========
+            if (password.type === "password") {
+                password.type = "text";
+            }
+            else {
+                password.type = "password";
+            }
+        };
     </script>
 </body>
 
