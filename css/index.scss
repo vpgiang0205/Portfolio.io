@@ -20,6 +20,7 @@ a:link,
 a:visited {
     text-decoration: none;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.753);
 }
 
 img {
@@ -47,6 +48,7 @@ body {
 
 
     header {
+    
         // background-color: blue;
         grid-column: 2/3;
         font-size: 14px;
@@ -60,9 +62,21 @@ body {
         }
 
         li {
+            font-size: 17px;
             display: inline-block;
-            padding: 0 20px;
+            
+            a{
+                color: grey;
+                padding: 10px 20px;
+            }
+            a:hover {
+                background-color: black;
+                    color: white;
+                    transition: 0.5s ease-in-out;
+                    border-radius: 50px;
+                }
         }
+      
     }
 
     main {
@@ -78,6 +92,18 @@ body {
         .row:first-child {
             grid-column: 1/5;
             text-align: center;
+
+            hr {
+                display: block;
+                width: 50%;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 1px;
+                border: 1px solid black;
+            }
         }
 
         .row:nth-child(2) {
@@ -122,15 +148,19 @@ body {
                 position: absolute;
                 bottom: 0px;
                 align-items: center;
+
                 button {
                     font-size: 20px;
                     margin-left: 30px;
                     padding: 1em 5em;
                 }
-                button:hover{
+
+                button:hover {
+                    
                     background-color: black;
-                        color: white;
-                        transition: 0.5s;
+                    color: white;
+                    transition: 0.5s;
+                    border-radius: 50px;
                 }
             }
 
@@ -147,13 +177,14 @@ body {
                 justify-content: space-evenly;
 
                 .flex_item {
-                    
+
                     padding: 30px 30px;
                     border: 1px solid black;
                     align-items: center;
                     justify-content: center;
                 }
-                .flex_item:hover{
+
+                .flex_item:hover {
                     background-color: black;
                     color: white;
                     transition: 0.5s;
@@ -187,33 +218,33 @@ body {
     .container {
         grid-template-columns: auto auto auto;
 
-        
-            .img_pos {
-                display: none;
+
+        .img_pos {
+            display: none;
+            position: relative;
+            grid-column: 1/2;
+
+            .img_pc {
                 position: relative;
-                grid-column: 1/2;
-
-                .img_pc {
-                    position: relative;
-                    width: 1em;
-                    left: 1em;
-                    z-index: 1;
-                }
-
-                .img_tablet {
-                    z-index: 2;
-                    top: 3em;
-                    position: absolute;
-                    width: 9rem;
-                }
-
-                .img_phone {
-                    position: relative;
-                    left: 1em;
-                    width: 5rem;
-                }
+                width: 1em;
+                left: 1em;
+                z-index: 1;
             }
-        
+
+            .img_tablet {
+                z-index: 2;
+                top: 3em;
+                position: absolute;
+                width: 9rem;
+            }
+
+            .img_phone {
+                position: relative;
+                left: 1em;
+                width: 5rem;
+            }
+        }
+
     }
 
 }
@@ -222,31 +253,32 @@ body {
 @media screen and (max-width: 739px) {
     .container {
         grid-template-columns: auto auto auto;
+
         .img_pos {
-                display: none;
+            display: none;
+            position: relative;
+            grid-column: 1/2;
+
+            .img_pc {
                 position: relative;
-                grid-column: 1/2;
-        
-                .img_pc {
-                    position: relative;
-                    width: 1em;
-                    left: 1em;
-                    z-index: 1;
-                }
-        
-                .img_tablet {
-                    z-index: 2;
-                    top: 3em;
-                    position: absolute;
-                    width: 9rem;
-                }
-        
-                .img_phone {
-                    position: relative;
-                    left: 1em;
-                    width: 5rem;
-                }
+                width: 1em;
+                left: 1em;
+                z-index: 1;
             }
+
+            .img_tablet {
+                z-index: 2;
+                top: 3em;
+                position: absolute;
+                width: 9rem;
+            }
+
+            .img_phone {
+                position: relative;
+                left: 1em;
+                width: 5rem;
+            }
+        }
     }
 }
 
