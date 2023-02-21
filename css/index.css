@@ -244,6 +244,9 @@ body {
   .container_fluid header ul {
     width: 100%;
   }
+  .container_fluid header ul :hover {
+    background-color: grey;
+  }
   .container_fluid header .nav {
     background-color: black;
     flex-direction: column;
@@ -251,6 +254,7 @@ body {
   .container_fluid header .nav li {
     text-align: center;
     font-size: 20px;
+    padding: 2rem;
   }
   .container_fluid header .nav li a {
     color: white;
