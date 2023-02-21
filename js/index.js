@@ -1,11 +1,12 @@
-const btntoggle = document.getElementsByClassName('btn_toggle')[0];
-const navlink = document.getElementsByClassName('nav')[0];
+const btnToggle = document.getElementsByClassName('btn_toggle')[0];
+const navLink = document.getElementsByClassName('nav')[0];
 
-btntoggle.addEventListener('click', () => {
-    navlink.classList.toggle('active')
+btnToggle.addEventListener('click', () => {
+    navLink.classList.toggle('active')
 })
 
-// window.onload = () => {
+// //switch tab
+//  window.onload = () => {
 //     const tab_switchers = document.querySelectorAll('[data-switcher]');
 
 //     for (let i = 0; i < tab_switchers.length; i++) {
@@ -15,7 +16,7 @@ btntoggle.addEventListener('click', () => {
 //         tab_switcher.addEventListener('click', () => {
 //             document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
 //             tab_switcher.parentNode.classList.add('is-active');
-
+// // 
 //             SwitchPage(page_id);
 //         });
 //     }
