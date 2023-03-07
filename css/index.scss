@@ -67,9 +67,9 @@ body {
             cursor: pointer;
             transition: 1s ease;
 
-            :hover {
-                transform: translate(20px, 20px) scale(129%);
-            }
+            // :hover {
+            //     transform: translate(0, 0) scale(129%);
+            // }
         }
 
         .btn_toggle {

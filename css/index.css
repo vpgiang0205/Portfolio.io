@@ -60,9 +60,6 @@ body {
   cursor: pointer;
   transition: 1s ease;
 }
-.container_fluid header .logo :hover {
-  transform: translate(20px, 20px) scale(129%);
-}
 .container_fluid header .btn_toggle {
   position: absolute;
   right: 30px;
